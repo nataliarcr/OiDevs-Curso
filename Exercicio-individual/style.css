@@ -1,0 +1,203 @@
+:root{ /*cartela de cores*/
+    --color-primary: #060e1a;
+    --color-white:#0f434e; 
+    --color-black:#f0f3ff;
+    --color-black-1: #5fa7c9;
+    --color-black-2: #fdfd00;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(./assets/energia.jpeg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+}
+.menu-superior{
+    background-color: var(--color-primary);
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
+}
+.logo{
+    color: var(--color-black-1);
+    font-size: 40px;
+    text-shadow: 1px 1px 1px  #0b1791;
+}
+.logo span{
+    color: #ffff
+}
+.menu-superior ul{
+    list-style: none;
+    display: flex;
+}
+.menu-superior ul li{
+    padding: 10px 30px;
+    position: relative;
+}
+.menu-superior ul li a{
+    color: var(--color-black-1);
+    text-decoration: none;
+    font-size: 20px;
+    transition: all 0.2s;
+}
+.menu-superior ul li a:hover{
+    color: var(--color-black-2);
+}
+.main{
+    width: 95%;
+    height: 50%;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.card-invest{
+    width: 70%;
+    height: 78vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 35px 35px;
+    background-color: var(--color-black-1);
+    border-radius: 20px;
+    box-shadow: 0px 5px 40px #2d4155; 
+    box-sizing: border-box;
+    margin: 0px 20px 0px 20px;
+}
+.card-or{
+    width: 30%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 35px 35px;
+    background-color: var(--color-black-1);
+    border-radius: 20px;
+    box-shadow: 0px 5px 40px #2d4155; 
+    box-sizing: border-box;
+    border: none;
+}
+.text-eco{
+    color: var(--color-black);
+    text-transform: uppercase;
+    font-size: 3vw;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px  #353535;
+    align-items: center;
+}
+.parent{
+    text-align: center;
+    filter: drop-shadow(5px 5px 5px #222);
+}
+.text-field >label{
+    margin-bottom: 5px;
+}
+.text-or{
+    color:var(--color-black);
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 2vw;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px #353535;
+}
+fieldset{
+    border: none;
+}
+.text-field{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: white;
+    margin-bottom: 10px;
+    width: 100%;
+}
+.text-field > input{
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #353535;
+    font-size: 10pt;
+    color: white;
+    outline: none;
+}
+.text-field >label{
+    margin-bottom: 5px;
+}
+.cadastro-button{
+    width: 100%;
+    padding: 10px 5px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    font-weight: bold;
+    color:#ffffff;
+    background-color: var(--color-white);
+    cursor: pointer;
+    box-shadow: 0px 10px 10px -14px #ffffff; 
+}
+button:hover{
+    cursor: pointer;
+    background-color: #353535;
+    color:var(--color-black-2);
+}
+.rodapé{
+    color: white;
+    text-align: center;
+}
+p{
+    text-align: justify;
+}
+h3, h4{
+    color: white;
+    text-align: center;
+}
+footer{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 30px;
+    background-color: var(--color-primary);
+    opacity: 95%;
+    border-radius: 20px;
+    box-shadow: 0px 5px 40px #2d4155; 
+    box-sizing: border-box;  
+    margin-bottom: 20px;
+}
+.ciclos{
+    width: 94%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 35px 35px;
+    background-color: var(--color-black);
+    border-radius: 20px;
+    box-shadow: 0px 5px 40px #2d4155; 
+    box-sizing: border-box;
+    margin: 0px 20px 0px 20px;
+    opacity: 90%;
+}
+.text-ciclos{
+    color: var(--color-black-1);
+    text-transform: uppercase;
+    font-size: 2vw;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px  var(--color-primary);
+}
