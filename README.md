@@ -1,2 +1,2 @@
 # OiDevs-Curso
-OiDevs | Curso front-end estático da @adatechbr
+OiDevs | Exercicios do curso front-end da @adatechbr
