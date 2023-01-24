@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Code</title>
+    
+    <!-- CSS do Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+    <!-- CSS customizado -->
+    <link rel="stylesheet" href="./midias/css/quem_somos.css">
+</head>
+
+<body>
+    <div class="container-fluid" id="div-header">
+        <header class="d-flex flex-wrap align-middle">
+            <a href="index.html"
+                class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+                <figure id="svg-logo" class="me-auto">
+                    <img src="./midias/img/vertical_branco.png" alt="" id="img-logo">
+                </figure>
+            </a>
+
+            <nav class="navbar navbar-expand-md navbar-expand-lg" id="menu-superior">
+                <div id="hamburguer">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navBarTopo" aria-controls="navBarTopo" aria-expanded="false" aria-label="Alterna navegação">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+
+                <div class="navbar-collapse collapse" id="navBarTopo">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="./index.html">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="./quem_somos.html">Quem Somos</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="./agendamento.html">Agendamento</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Serviços
+                            </a>
+
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="./servicos/banho_tosa.html">Banho & Tosa</a></li>
+                                <li><a class="dropdown-item" href="./servicos/vacinacao.html">Vacinação</a></li>
+                                <li><a class="dropdown-item" href="./servicos/hospedagem.html">Hospedagem</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>               
+            </nav>
+
+            <span id="botao-login">
+                <img src="./midias/img/account.png" alt="" id="icone-login">
+                <a href="login.html">Login</a>
+            </span> 
+        </header>
+    </div>
+
+    <main>
+        <h2 class="titulo_quem_somos">Quem Somos</h2>
+        <div class="sobre">
+            <img src="./midias/img/quem-somos-1.jfif" alt="Cão e gato no colo de uma veterinária">
+            <p>
+                Acreditamos na especialização veterinária como forma de oferecer um alto nível de atendimento na área da saúde animal.              Acreditamos no uso de ferramentas e equipamentos que incrementam e aceleram o diagnóstico.
+                Acreditamos no trabalho em equipe como forma de aumentar a assertividade no diagnóstico e no tratamento.
+                Acreditamos que o paciente deve ser o centro de nossas atenções.
+                Acreditamos que o proprietário deve ser engajado na vida do seu animal.
+                <br>
+                <br>
+                Nossa maior alegria é acolher com dedicação e amor cada animal que recebemos. E temos muita satisfação em oferecer 
+                aos nossos clientes toda a assistência necessária à saúde e ao bem-estar de seus pets 24 horas por dia, como tem 
+                sido nesses 10 anos de existência.
+                <br>     
+                <br>         
+                <b>
+                    Assim como o seu melhor amigo, estamos sempre aqui para receber você, seja dia ou noite. 
+                </b>
+            </p>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Dra. Maria Souza</h5>
+                        <img src="./midias/img/colaborador_1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text"> Graduação em Medicina Veterinária, pela UFRJ (2013). MBA em Gestão Empresarial,
+                                pela UNESA (2014-2016).</p>
+                            <a href="#" class="btn btn-primary">Agende uma consulta</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Dr. Mauro Pereira</h5>
+                        <img src="./midias/img/colaborador_2.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">Graduação em Medicina Veterinária, pela UFRRJ (2002). Curso de interpretação laboratorial em Clínica Veterinária (2013).</p>
+                            <a href="#" class="btn btn-primary">Agende uma consulta</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Dra. Melissa Costa</h5>
+                        <img src="./midias/img/colaborador_3.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">Graduação em medicina veterinária na Universidade Estácio de Sá (2019).
+                                Curso intensivo em emergência e urgência – CDMV (2019).</p>
+                            <a href="#" class="btn btn-primary">Agende uma consulta</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="d-flex flex-column justify-content-center align-items-center">
+        <section id="text-footer">
+            Projeto Final Curso OiDevs By Ada - Front-End Estático - Professor Dannyel Kayke
+        </section>
+    </footer>
+
+    <!-- Importação de bibliotecas -->
+    <script src="https://releases.jquery.com/git/jquery-git.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+
+    <!-- Importação de scripts customizados -->
+    <script src="./midias/js/scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Code</title>
+    
+    <!-- CSS do Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+    <!-- CSS customizado -->
+    <link rel="stylesheet" href="../midias/css/hospedagem.css">
+</head>
+
+<body>
+    <div class="container-fluid" id="div-header">
+        <header class="d-flex flex-wrap align-middle">
+            <a href="index.html"
+                class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+                <figure id="svg-logo" class="me-auto">
+                    <img src="../midias/img/vertical_branco.png" alt="" id="img-logo">
+                </figure>
+            </a>
+
+            <nav class="navbar navbar-expand-md navbar-expand-lg" id="menu-superior">
+
+                <div id="hamburguer">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navBarTopo" aria-controls="navBarTopo" aria-expanded="false" aria-label="Alterna navegação">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+
+                <div class="navbar-collapse collapse" id="navBarTopo">
+
+                    <ul class="navbar-nav ml-auto">
+
+                        <li class="nav-item active">
+                            <a class="nav-link" href="../index.html">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="../quem_somos.html">Quem Somos</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="../agendamento.html">Agendamento</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Serviços
+                            </a>
+
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="./banho_tosa.html">Banho & Tosa</a></li>
+                                <li><a class="dropdown-item" href="./vacinacao.html">Vacinação</a></li>
+                                <li><a class="dropdown-item" href="./hospedagem.html">Hospedagem</a></li>
+                            </ul>
+                        </li> 
+                    </ul>
+                </div>               
+            </nav>
+
+            <span id="botao-login">
+                <img src="../midias/img/account.png" alt="" id="icone-login">
+                <a href="../login.html">Login</a>
+            </span> 
+        </header>
+    </div>
+
+    <main>
+        <h1 class="titulo_hospedagem">Hospedagem</h1>
+        <div class="row">
+            <div class="img_hospedagem col-lg-12 col-xl-5 align-self-center mb-4">
+                <img class="col-9 card" src="../midias/img/hospedagem.jpg" alt="Hospedagem cão e gato">
+            </div>
+
+            <div class="texto_hospedagem col-lg-12 col-xl-6">
+                <p>
+                    Está com viagem programada e não sabe com quem deixar o seu animalzinho? Aqui na PetCode oferecemos o serviço Hospedagem Luxury para pets. Na Hotel PetCode, temos infratestrutura robusta e pronta para receber seu animal, seja ele gato ou cachorro. Nossa ala de animais é dividida, então pode ficar despreocupado.
+                </p>
+
+                <p>
+                    No Hotel PetCode Luxyry para cães, possuimos acomodações individuais para seu bichinho. O dormitório conta com ar condicionado 24h e TV no canal DogSky. Além disso, seu amiguinho participará de atividades recreativas na área verde ou no pátio coberto. Estas atividades buscam promover a interação e socialilidade entre os animais, além de trabalhar o faro, caça e corrida. Os grupos de animais são divididos por porte e temperamento, melhorando assim a integração de todos.  
+                </p>
+
+                <p>
+                    Já no Hotel PetCode Luxury para gatos, possuímos acomodações coletivas com até 5 gatos por dormitório. Sabemos que os gatos são seres sociais e adoram dormir juntinhos. Por isso, preservamos este hábito para melhor atender nosso clientes. Além da interação no dormitório, seu animalzinho participará de atividades recreativas coletivas na área verde externa ou no pátio coberto. As atividades buscam trabalhar a caça dos gatos, sua atividade preferida. Após gastarem muita energia, eles poderão se deliciar com a Hora do Sachê e spa com massagem. Neste momento seu animalzinho poderá relaxar com uma deliciosa esfregada, apreciando um chachê internacional CatDeliciusPlus, vegano e feito com carne de ervilhas colhidas no Tibet acrecido de sal rosa do Himaláia.
+                </p>
+            </div>
+        </div>
+        
+        <div class="titulo_hospedagem_cao">
+            <h2>Hospedagem para Cães</h2>
+        </div>
+
+        <div class="hospedagem_cao">
+            <img src="../midias/img/hospedagem_cachorro.webp" alt="Hotel para cachorro">
+            <div class="lista_cao">
+                <ul>
+                    <li>Acomodações individuais com ar condicionado e TV com canal DogSky</li>
+                    <li>Área verde para atividades recreativas em grupo</li>
+                    <li>Pátio coberto com 400m² para dias de chuva</li>
+                    <li>Natação canina em piscina de 300m²</li>
+                    <li>Sala de descanso confortável</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="titulo_hospedagem_gato">
+            <h2>Hospedagem para Gatos</h2>
+        </div>
+        
+        <div class="hospedagem_gato">
+            <img src="../midias/img/hospedagem_gato.png" alt="Hotel para gato">
+            <div class="lista_gato">
+                <ul>
+                    <li>Acomodações em pequenos grupos divididos por temperamento</li>
+                    <li>Caça em grupo e atividades recreativas em área verde</li>
+                    <li>Carinho e cuidado 24h por dia</li>
+                    <li>Spa com massagem</li>
+                    <li>Hora do sachê</li>
+                </ul>
+            </div>
+        </div>
+
+    </main>
+</body>
+
+<footer class="d-flex flex-column justify-content-center align-items-center">
+    <section id="text-footer">
+        Projeto Final Curso OiDevs By Ada - Front-End Estático - Professor Dannyel Kayke
+    </section>
+</footer>
+
+<!-- Importação de bibliotecas -->
+<script src="https://releases.jquery.com/git/jquery-git.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+
+<!-- Importação de scripts customizados -->
+<script src="./midias/js/scripts.js"></script>
+</body>

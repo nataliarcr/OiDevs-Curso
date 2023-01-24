@@ -1,0 +1,77 @@
+@import url(./componentes/variaveis.css);
+@import url(./componentes/header.css);
+@import url(./componentes/footer.css);
+
+.titulo_quem_somos{
+    text-align: center;
+}
+
+.sobre {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 2rem 3rem 3rem 3rem;
+    word-wrap: break-word;
+}
+
+h2 {
+    margin: 3rem 3rem 0 3rem;
+}
+
+.sobre img {
+    width: 30vw;
+    box-shadow: 2px 2px 10px black;
+}
+
+.sobre p {
+    text-align: justify;
+    margin: 0 50px;
+}
+
+ol, ul {
+padding-left: 0;
+}
+
+.card-img-top {
+    width: -webkit-fill-available;
+}
+
+main h2 {
+    color: #3d5974;
+}
+
+.row {
+    margin: 2rem 3rem 3rem 3rem;
+}
+
+.btn {
+    background-color: #3d5974;
+    border-color: #2e4459;
+} 
+
+.btn:hover {
+    background-color: #bf9925;
+    border-color: #a28220;
+}
+
+@media (max-width: 767px) {
+    .sobre {
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    .row {
+        gap: 3rem;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        margin: 1rem;
+    }
+
+    .col-sm-4 {
+        width: 80vw;
+    }
+    
+}

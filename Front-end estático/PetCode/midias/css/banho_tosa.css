@@ -1,0 +1,78 @@
+@import url(./componentes/variaveis.css);
+@import url(./componentes/header.css);
+@import url(./componentes/footer.css);
+
+main h2 {
+    color: #3d5974;
+    margin: 3rem 3rem 0 3rem;
+}
+
+.bi {
+    vertical-align: -.125em;
+    fill: currentColor;
+}
+
+.btn {
+    background-color: #3d5974;
+    border-color: #2e4459;
+} 
+
+.btn:hover {
+    background-color: #bf9925;
+    border-color: #a28220;
+}
+
+.img-banho {
+    width: 30vw; 
+        
+}
+
+.imagem_banho img {
+    box-shadow: 2px 2px 10px black;
+}
+
+.titulo_banho {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.texto_banho{
+    text-align: justify;
+    margin-right: 30px;
+}
+
+.bloco_banho {
+    align-items: center;
+}
+.bloco_banho img {
+    width: 130px;
+}
+
+.bloco_banho p {
+    text-align: justify;
+    margin: 0 5px;
+}
+
+.img-banho-vantagens {
+    padding: 20px;
+    border-radius: 30px;
+    background-color: #2e4459;
+    width: 10vw;
+}
+
+@media (min-width: 768px) {
+    .align-items-md-center {
+        align-items: flex-start !important;            
+    }
+}
+
+@media (max-width: 768px) {
+    .img-banho {
+        width: 50vw;                  
+    }
+
+    
+    .img-banho-vantagens {
+        min-width: 100px !important;
+    }
+}

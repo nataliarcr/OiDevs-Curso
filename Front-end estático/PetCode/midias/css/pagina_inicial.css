@@ -1,0 +1,64 @@
+@import url(./componentes/variaveis.css);
+@import url(./componentes/header.css);
+@import url(./componentes/footer.css);
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.h3-txt-azul {
+    color: var(--azul-header);
+}
+
+.icone {
+    background-color: var(--azul-header);
+    width: 3rem;
+    height: 3rem;
+    border-radius: 10%;
+}
+
+.txt-azul {
+    color: var(--azul-header);
+    font-size: 25px;
+}
+
+.icone img {
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+}
+
+.icone-avaliacao {
+    width: 20px;
+    height: 20px;
+    margin-bottom: 5px;
+}
+
+.amarelo {
+    background-color: var(--amarelo);
+}
+
+.azul {
+    background-color: var(--azul-footer);
+}
+
+.branco {
+    color: var(--bs-body-bg);
+}
+
+
+#div-avaliacoes {
+    padding: 50px 0;
+    color: #fff;
+}
+
+.card-avaliacao {
+    height: 100%;
+    /*COR DA CARD*/
+    border: 2px solid;
+    border-color: var(--azul-footer);
+
+}
+
