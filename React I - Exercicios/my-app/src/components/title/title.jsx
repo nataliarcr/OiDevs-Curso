@@ -1,8 +1,10 @@
+import "./title.css"
+
 const  Title = () => {
     
     return(
         <>
-            <h1>Faça o login</h1>
+            <h1>Login</h1>
         </>
     )
 };

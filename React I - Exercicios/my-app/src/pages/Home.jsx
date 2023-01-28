@@ -1,6 +1,7 @@
 import { useNavigate } from "react-router-dom";
-import Title from "../components/title/title.js";
-import Button from "../components/button/button.js";
+import Title from "../components/title/title";
+import Button from "../components/button/button";
+
 
 
 const  Home = () => {
@@ -20,5 +21,7 @@ const  Home = () => {
     </div>
     );
 };
+
+
 
 export default Home;
