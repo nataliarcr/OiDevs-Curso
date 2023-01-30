@@ -67,11 +67,14 @@ const Login = () => {
             /> */}
         {errorMessage && <p className="error-message">{errorMessage}</p>}
         <Input
+          id = "user"
+          placeholder = "Usuário"
           label="Usuário"
           value={username}
           onChange={(e) => setUsername(e.target.value)}
         />
         <Input
+          placeholder = "Senha"
           label="Senha"
           type="password"
           value={password}
