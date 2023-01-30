@@ -1,12 +1,16 @@
 import "./title.css"
+import ProtoTypes from "prop-types";
 
-const  Title = () => {
+const  Title = ({text}) => {
     
     return(
         <>
-            <h1>Login</h1>
+            <h1 className="title">{text}</h1>
         </>
     )
 };
 
+Title.propTypes = {
+    text: ProtoTypes.string,
+  };
 export default Title;

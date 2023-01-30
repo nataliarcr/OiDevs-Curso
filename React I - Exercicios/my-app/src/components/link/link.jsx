@@ -1,9 +1,12 @@
+import "./link.css";
+
 const  Link = () => {
     
     return(
-        <a>
-            <h1>Esqueceu sua senha? Clique aqui</h1>
-        </a>
+        <p>
+            <>Esqueceu sua senha? Clique</>
+            <a href="https://google.com"> aqui</a>
+        </p>
     )
 };
 

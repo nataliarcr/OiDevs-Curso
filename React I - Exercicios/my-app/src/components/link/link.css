@@ -1,0 +1,20 @@
+/*não visitado */
+a:link {
+    color: green;
+    text-decoration: none;
+  }
+  
+  /*já visitado*/
+  a:visited {
+    color: blue;
+    text-decoration: none;
+  }
+  a:hover {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+  }
+  
+  a:active {
+    color: yellow;
+    text-decoration: none;
+  }

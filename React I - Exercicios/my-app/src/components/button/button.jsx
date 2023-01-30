@@ -1,28 +1,24 @@
 import "./button.css";
+import {PropTypes} from "prop-types";
 
-const Button = (toHome) => {
+const Button = ({text, aoClicar}) => {
+    return (
+      <div>
+        <button
+          className="button"
+        //   style={({ backgroundColor: bgColor, color })}
+          onClick={aoClicar}
+        >
+          {text}
+        </button>
+      </div>
+    );
+  }
+  
 
-    return(
-        <>
-        <button onClick={toHome}> Entrar </button>
-        </>
-    )
+  Button.propTypes = {
+    title: PropTypes.string,
+    aoClicar: PropTypes.func,
+  };
 
-}
-
-// const backButton = () => {
-//     const navigate = useNavigate();
-
-//     const goToLogin = () => {
-//         navigate("/");
-//       };
-      
-//     return(
-//         <>
-//         <button onClick={goToLogin}> Voltar </button>
-//         </>
-//     )
-
-// }
- 
 export default Button;
