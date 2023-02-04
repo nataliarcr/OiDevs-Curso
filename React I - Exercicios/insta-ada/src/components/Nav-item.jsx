@@ -1,5 +1,5 @@
 export const NavItem = (props) => {
-    return <div className ="naveItem">
+    return <div className ="navItem">
         {props.children}
     </div>
 }

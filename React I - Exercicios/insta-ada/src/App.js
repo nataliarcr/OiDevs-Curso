@@ -24,8 +24,8 @@ function App() {
         <>
             <Navbar>
                 <Title />
-                {items.map((item) => (
-                    <NavItem key={item} text={item} />
+                {items.map((items) => (
+                    <NavItem key={items} text={items} />
                 ))}
             </Navbar>
             <Header>
