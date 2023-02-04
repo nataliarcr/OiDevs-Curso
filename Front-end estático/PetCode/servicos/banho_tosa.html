@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Code</title>
+    
+    <!-- CSS do Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+    <!-- CSS customizado -->
+    <link rel="stylesheet" href="../midias/css/banho_tosa.css">
+</head>
+
+<body>
+    <div class="container-fluid" id="div-header">
+        <header class="d-flex flex-wrap align-middle">
+            <a href="index.html"
+                class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+                <figure id="svg-logo" class="me-auto">
+                    <img src="../midias/img/vertical_branco.png" alt="" id="img-logo">
+                </figure>
+            </a>
+
+            <nav class="navbar navbar-expand-md navbar-expand-lg" id="menu-superior">
+
+                <div id="hamburguer">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navBarTopo" aria-controls="navBarTopo" aria-expanded="false" aria-label="Alterna navegação">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+
+                <div class="navbar-collapse collapse" id="navBarTopo">
+
+                    <ul class="navbar-nav ml-auto">
+
+                        <li class="nav-item active">
+                            <a class="nav-link" href="../index.html">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="../quem_somos.html">Quem Somos</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="../agendamento.html">Agendamento</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Serviços
+                            </a>
+
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="./banho_tosa.html">Banho & Tosa</a></li>
+                                <li><a class="dropdown-item" href="./vacinacao.html">Vacinação</a></li>
+                                <li><a class="dropdown-item" href="./hospedagem.html">Hospedagem</a></li>
+                            </ul>
+                        </li> 
+                    </ul>
+                </div>               
+            </nav>
+
+            <span id="botao-login">
+                <img src="../midias/img/account.png" alt="" id="icone-login">
+                <a href="../login.html">Login</a>
+            </span> 
+        </header>
+    </div>
+</body>
+
+<main>
+    <h1 class="titulo_banho">Banho & Tosa</h1>
+    <div class="container px-4">
+        <div class=" caixa_banho row row-cols-1 row-cols-md-2 align-items-md-center g-5 py-5">
+            <div class="imagem_banho d-flex flex-column align-items-start gap-2">
+                <img class="img-banho" src="../midias/img/banho-tosa.jpg" alt="">
+                <h3 class="fw-bold">
+                    <i>Um spa para o seu peludinho</i>
+                </h3>
+                
+                <p class="texto_banho text-muted">A PetCode oferece os serviços para cães e para gatos em ambientes separados.
+                    Nossos profissionais recebem treinamento e qualificação excelentes para garantir a qualidade 
+                    do serviço. E você também pode ficar e assistir, o espaço é todo envidraçado.<br><b>De terça a domingo, das 8h às 20h.</b></p>
+                <a href="../agendamento.html" class="btn btn-primary btn-lg">Agende seu horário</a>
+            </div>
+            <div class="row row-cols-1 row-cols-sm-2 g-4">
+                <div class="bloco_banho imagem_banho d-flex flex-column gap-2">
+                    <img class="img-banho-vantagens" src="../midias/img/banho-tosa-produtos.png" alt="">
+                    <h4 class="fw-semibold mb-0">Produtos de alta qualidade</h4>
+                    <p class="text-muted">Utilizamos apenas produtos com ingredientes suaves e 
+                        PH balanceado, hipoalergênicos, sem sal e sem corantes. </p>
+                </div>
+
+                <div class="bloco_banho imagem_banho d-flex flex-column gap-2">
+                    <img class="img-banho-vantagens" src="../midias/img/banho-tosa-sem-pressa.png" alt="">
+                    <h4 class="fw-semibold mb-0">Sem pressa</h4>
+                    <p class="text-muted">O banho é dado de forma calma e tranquila para evitar estresse nos peludinhos.</p>
+                </div>
+
+                <div class="bloco_banho imagem_banho d-flex flex-column gap-2">
+                    <img class="img-banho-vantagens" src="../midias/img/banho-tosa-espaco.png" alt="">
+                    <h4 class="fw-semibold mb-0">Espere brincando</h4>
+                    <p class="text-muted">O seu bichinho não esperará em gaiolas antes ou após o banho.</p>
+                </div>
+
+                <div class="bloco_banho imagem_banho d-flex flex-column gap-2">
+                    <img class="img-banho-vantagens" src="../midias/img/banho-tosa-pacotes.png" alt="">
+                    <h4 class="fw-semibold mb-0">Pacotes especiais</h4>
+                    <p class="text-muted">Eles sempre vão precisar de banho e tosa, né? Pensando nisso, criamos pacotes para manter seu pet sempre limpinho com hora marcada.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer class="d-flex flex-column justify-content-center align-items-center">
+    <section id="text-footer">
+        Projeto Final Curso OiDevs By Ada - Front-End Estático - Professor Dannyel Kayke
+    </section>
+</footer>
+
+<!-- Importação de bibliotecas -->
+<script src="https://releases.jquery.com/git/jquery-git.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+
+<!-- Importação de scripts customizados -->
+<script src="../midias/js/scripts.js"></script>
+</body>

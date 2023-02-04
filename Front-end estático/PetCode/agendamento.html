@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendamento</title>
+    
+    <!-- CSS do Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    
+    <!-- CSS customizado -->
+    <link rel="stylesheet" href="./midias/css/agendamento.css">
+    
+</head>
+
+<body> 
+
+    <div class="container-fluid" id="div-header">
+        <header class="d-flex flex-wrap align-middle">
+            <a href="index.html"
+                class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+                <figure id="svg-logo" class="me-auto">
+                    <img src="./midias/img/vertical_branco.png" alt="" id="img-logo">
+                </figure>
+            </a>
+
+            <nav class="navbar navbar-expand-md navbar-expand-lg" id="menu-superior">
+
+                <div id="hamburguer">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navBarTopo" aria-controls="navBarTopo" aria-expanded="false" aria-label="Alterna navegação">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+
+                <div class="navbar-collapse collapse" id="navBarTopo">
+
+                    <ul class="navbar-nav ml-auto">
+
+                        <li class="nav-item active">
+                            <a class="nav-link" href="./index.html">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="./quem_somos.html">Quem Somos</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="./agendamento.html">Agendamento</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Serviços
+                            </a>
+
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="./servicos/banho_tosa.html">Banho & Tosa</a></li>
+                                <li><a class="dropdown-item" href="./servicos/vacinacao.html">Vacinação</a></li>
+                                <li><a class="dropdown-item" href="./servicos/hospedagem.html">Hospedagem</a></li>
+                            </ul>
+                        </li>                        
+                    </ul>
+                </div>               
+
+            </nav>
+
+            <span id="botao-login">
+                <img src="./midias/img/account.png" alt="" id="icone-login">
+                <a href="login.html">Login</a>
+            </span> 
+
+        </header>
+    </div>
+
+<main class="main-agendamento">
+
+    <div class="card-imagem">
+        <img src="./midias/img/colaborador.jpg">
+    </div>
+    
+    <div class="card-agendamento">
+        <div class="text-login">AGENDAMENTO</div>
+        <form>
+            <fieldset>
+                <div class="text-field">
+                    <label>Nome</label>
+                    <input type="text" name="nome" id="nome-cliente">
+                </div>
+                <div class="text-field">
+                    <label>Nome do Pet</label>
+                    <input type="text" name="pet" id="pet-cliente">
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <div class="text-field"> <!--seleção tipo de pet-->
+                    <label>Tipo de Pet</label>
+                    <div id="tipo-pet">
+                        <input type="radio" id="pet1" name="pet" value="cachorro">
+                        <label for="pet1">Cachorro</label>
+                    
+                        <input type="radio" id="pet2" name="pet" value="gato">
+                        <label for="pet2">Gato</label>
+                    
+                        <input type="radio" id="pet3" name="pet" value="outros">
+                        <label for="pet3">Outros</label>
+                    </div>
+                </div> 
+            </fieldset>
+
+            <div class="text-field"> 
+                <label>Serviços</label> <!--dropdown dos serviços-->
+                <select class="serviços">
+                    <option selected disabled value="">Escolha o serviço</option>
+                    <option>Banho</option>
+                    <option>Hospedasem</option>
+                    <option>Tosa</option>
+                    <option>Veterinário</option>
+                </select>  
+            </div>
+    
+            <div class="text-field">
+                <label for="dia">Data do Agendamento</label> <!--campo para a data-->
+                <input type="date" id="dia-agendamento" name="dia-agendamento"
+            </div>
+    
+            <div class="text-field">
+                <label>Horário</label> <!--dropdown dos horários-->
+                <select class="horario">
+                    <option selected disabled value="">Escolha o horário</option>
+                    <option>8:00</option>
+                    <option>9:00</option>
+                    <option>10:00</option>
+                    <option>11:00</option>
+                    <option>13:00</option>
+                    <option>12:00</option>
+                    <option>14:00</option>
+                    <option>15:00</option>
+                    <option>16:00</option>
+                    <option>17:00</option>
+                </select>  
+            </div>
+    
+            <div class="text-field"> <!--campo de observação-->
+                <label>Observações:</label>
+                <textarea row="6" id="obs" name="obs"></textarea>
+            </div>
+
+            <section>
+                <button class="agendamento-button" type="submit">Enviar</button>
+            </section>    
+        </form>
+    </div>
+
+</main>
+
+
+
+<footer class="d-flex flex-column justify-content-center align-items-center">
+    <section id="text-footer">
+        Projeto Final Curso OiDevs By Ada - Front-End Estático - Professor Dannyel Kayke
+    </section>
+</footer>
+
+<!-- Importação de bibliotecas -->
+<script src="https://releases.jquery.com/git/jquery-git.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+
+<!-- Importação de scripts customizados -->
+<script src="./midias/js/scripts.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Code</title>
+    
+    <!-- CSS do Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+    <!-- CSS customizado -->
+    <link rel="stylesheet" href="./midias/css/pagina_inicial.css">
+</head>
+
+<body>
+
+    <div class="container-fluid" id="div-header">
+        <header class="d-flex flex-wrap align-middle">
+            <a href="index.html"
+                class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+                <figure id="svg-logo" class="me-auto">
+                    <img src="./midias/img/vertical_branco.png" alt="" id="img-logo">
+                </figure>
+            </a>
+
+            <nav class="navbar navbar-expand-md navbar-expand-lg" id="menu-superior">
+
+                <div id="hamburguer">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navBarTopo" aria-controls="navBarTopo" aria-expanded="false" aria-label="Alterna navegação">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+                
+                <div class="navbar-collapse collapse" id="navBarTopo">
+
+                    <ul class="navbar-nav ml-auto">
+
+                        <li class="nav-item active">
+                            <a class="nav-link" href="./index.html">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="./quem_somos.html">Quem Somos</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="./agendamento.html">Agendamento</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Serviços
+                            </a>
+
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="./servicos/banho_tosa.html">Banho & Tosa</a></li>
+                                <li><a class="dropdown-item" href="./servicos/vacinacao.html">Vacinação</a></li>
+                                <li><a class="dropdown-item" href="./servicos/hospedagem.html">Hospedagem</a></li>
+                            </ul>
+                        </li>                    
+                    </ul>
+                </div>               
+
+            </nav>
+
+            <span id="botao-login">
+                <img src="./midias/img/account.png" alt="" id="icone-login">
+                <a href="login.html">Login</a>
+            </span> 
+
+        </header>
+    </div>
+
+
+
+    <main>
+        <div id="controleCarrossel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <!--Primeira imagem do Carousel-->
+                <div class="carousel-item active">
+                    <img src="./midias/img/banner1.jpg" class="d-block w-100" alt="Banner rotativo">
+                    <div class="carousel-caption d-none d-md-block">
+                    </div>
+                </div>
+
+                <!--Segunda imagem do Carousel-->
+                <div class="carousel-item">
+                    <img src="./midias/img/banner2.jpg" class="d-block w-100" alt="Banner rotativo">
+                    <div class="carousel-caption d-none d-md-block">
+                    </div>
+                </div>
+
+                <!--Terceira imagem do Carousel-->
+                <div class="carousel-item">
+                    <img src="./midias/img/banner3.jpg" class="d-block w-100" alt="Banner rotativo">
+                    <div class="carousel-caption d-none d-md-block">
+                    </div>
+                </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#controleCarrossel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+
+            <button class="carousel-control-next" type="button" data-bs-target="#controleCarrossel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <!--Quadro de Informações-->
+        <section id="hospital" class="container py-5 mb-5">
+            <div class="row text-left mt-5">
+                <div class="col-md-6">
+                    <h3><p class="h3-txt-azul">Hospital Veterinário 24 horas</p></h3>
+                    <p>Estamos preparados para oferecer ao seu pet tratamento veterinário especializado e dedicado em
+                        consultas de rotina, emergência e terapia intensiva.</p>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <section class="icone">
+                                <img src="./midias/img/atendimento-emergencia.png">                                                                   
+                            </section>
+                            <p class="txt-azul">Atendimento de Emergência</p>
+                        </div>
+                        <div class="col-md-6">
+                            <section class="icone">
+                                <img src="./midias/img/especialidades-medicas.png" alt="">
+                            </section>
+                            <p class="txt-azul">Especialialidades Médicas</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <section class="icone">
+                                <img src="./midias/img/profissionais-qualificados.png" alt="">
+                            </section>
+                            <p class="txt-azul">Profissionais Qualificados</p>
+
+                        </div>
+                        <div class="col-md-6">
+                            <section class="icone">
+                                <img src="./midias/img/atendimento-rapido.png" alt="">
+                            </section>
+                            <p class="txt-azul">Atendimento Rápido</p>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        
+
+        <!--Qaudro de Opiniões-->
+        <section class="container-fluid amarelo">
+            <div class="row text-center">
+                <div class="col-12 mt-5">
+                    <h3 class="branco">Avaliações</h3>
+                </div>
+            </div>
+            <div class="container" id="div-avaliacoes">
+                <div class="row">
+                    <div class="col-md-3 mb-3">
+                        <div class="card card-avaliacao">
+                            <div class="card-body amarelo">
+                                <img src="./midias/svg/quote.svg" alt="" width="32" height="32">
+                                Veterinária ótima, toda a equipe empenhada, os médicos excelentes, a direção maravilhosa. Eu super indico! Obrigado PetCode e 
+                                equipe por todas as assistências precisas.
+                            </div>
+                            <div class="card-footer azul">
+                                Eduardo Azevedo<br>
+                                <img src="./midias/img/avaliacao.png" alt="" class="icone-avaliacao"> 9/10
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <div class="card card-avaliacao">
+                            <div class="card-body amarelo">
+                                <img src="./midias/svg/quote.svg" alt="" width="32" height="32">
+                                A clínica é ótima, aberta 24h e sempre ajudam nosso Picolé em todos os momentos. A equipe é excelente e o Dr. Mauro é excepcional
+                                no atendimento e atenção!
+                                Confio meu filho de 4 patas de olhos fechados.
+                            </div>
+                            <div class="card-footer azul">
+                                Ana Cláudia<br>
+                                <img src="./midias/img/avaliacao.png" alt="" class="icone-avaliacao"> 10/10
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <div class="card card-avaliacao">
+                            <div class="card-body amarelo">
+                                <img src="./midias/svg/quote.svg" alt="" width="32" height="32">
+                                Equipe maravilhosa! Em especial ao Jô! Ele é carinho e tosa com maestria!
+                                Bia é uma fofura! O local é uma gracinha e atendimento nota 10! Resultado: meu lindo está um artista!
+                            </div>
+                            <div class="card-footer azul">
+                                Marluce Dias<br>
+                                <img src="./midias/img/avaliacao.png" alt="" class="icone-avaliacao"> 9,5/10
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <div class="card card-avaliacao">
+                            <div class="card-body amarelo">
+                                <img src="./midias/svg/quote.svg" alt="" width="32" height="32">
+                                Sou cliente há mais de 20 anos e a excelencia é a mesma até hoje. O carinho dos profissionais com nossos pets,
+                                o atendimento da recepção, enfermeiros e médicos fazem toda diferença, além do atendimento de 24h.
+                            </div>
+                            <div class="card-footer azul">
+                                Fátima Gonçalves<br>
+                                <img src="./midias/img/avaliacao.png" alt="" class="icone-avaliacao"> 9/10
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!--section id="newsletter">
+            
+        </section-->
+
+    </main>
+
+    <footer class="d-flex flex-column justify-content-center align-items-center">
+        <section id="text-footer">
+            Projeto Final Curso OiDevs By Ada - Front-End Estático - Professor Dannyel Kayke
+        </section>
+    </footer>
+
+    <!-- Importação de bibliotecas -->
+    <script src="https://releases.jquery.com/git/jquery-git.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+
+    <!-- Importação de scripts customizados -->
+    <script src="./midias/js/scripts.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,132 @@
+#div-header {
+    background-color: var(--azul-header);
+}
+
+header {
+    margin-right: 50px;
+}
+
+#navBarTopo {
+    margin-right: 55px;
+}
+
+figure {
+    margin: 0;
+}
+
+#img-logo {
+    padding-left: 30px;
+    width: 9rem;
+    height: auto;
+}
+
+.nav-item {
+    padding: 10px;
+}
+
+.nav-item a:hover {
+    color: var(--amarelo) !important;
+    border-bottom: var(--amarelo) 3px solid;
+    margin-bottom: -3px;
+}
+
+/* COR DOS LINKS */
+a.nav-link {
+    color: #fff !important;
+    font-size: 20px;
+}
+
+a:visited {
+    color: #fff;
+}
+
+a:active {
+    color: #fff;
+}
+/* COR DOS LINKS */
+
+.dropdown-menu {
+    background-color: var(--azul-header);
+}
+
+#icone-login {
+    width: 20px;
+    height: 20px;
+    margin-top: -2px;
+}
+
+#botao-login {
+    background-color: var(--azul-footer);
+    color: var(--amarelo);
+    padding: 5px;
+    position: absolute;
+    top: 42px;
+    right: 25px;
+    border-radius: 10%;
+}
+
+#botao-login a {
+    background-color: var(--azul-footer);
+    color: var(--amarelo);
+    text-decoration: none;
+    margin-right: 5px;
+}
+
+/* RESPONSIVIDADE CELULAR */
+@media (max-width: 767px) {
+    .nav-item {
+        padding: 0 10px;
+    }
+
+    .nav-item:first-child {
+        padding-top: 10px;
+    }
+
+    .nav-item:last-child {
+        padding-bottom: 10px;
+    }
+
+    .nav-link {
+        font-size: 18px !important;
+    }
+
+    #img-logo {
+        display: none;
+    }
+
+    #botao-login {
+        padding: 5px;
+        top: 8px;
+        right: 15px;
+    }
+
+    #botao-login a {
+        font-size: 20px;
+    }
+}
+
+/* RESPONSIVIDADE TABLET */
+@media (min-width: 768px) and (max-width: 992px) {
+    #img-logo {
+        padding-left: 10px;
+        width: 4rem;
+        height: auto;
+    }
+
+    .nav-item > a {
+        padding: 0px;
+        font-size: 16px;
+    }
+
+    #botao-login {
+        padding: 5px;
+        top: 15px;
+        right: 25px;
+    }
+
+    #botao-login a {
+        background-color: var(--azul-footer);
+        color: var(--amarelo);
+        margin-right: 5px;
+    }
+}

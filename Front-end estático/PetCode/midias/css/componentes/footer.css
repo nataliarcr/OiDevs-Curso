@@ -1,0 +1,6 @@
+footer {
+    min-height: 10vh;
+    background-color: var(--azul-footer);
+    margin-block-end: 0;
+    color: #fff;
+}

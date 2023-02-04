@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <!-- CSS do Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    
+    <!-- CSS customizado -->
+    <link rel="stylesheet" href="./midias/css/login.css">
+
+</head>
+<body class="body-login">
+
+    <div class="container-fluid" id="div-header">
+        <header class="d-flex flex-wrap align-middle">
+            <a href="index.html"
+                class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+                <figure id="svg-logo" class="me-auto">
+                    <img src="./midias/img/vertical_branco.png" alt="" id="img-logo">
+                </figure>
+            </a>
+
+            <nav class="navbar navbar-expand-md navbar-expand-lg" id="menu-superior">
+
+                <div id="hamburguer">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navBarTopo" aria-controls="navBarTopo" aria-expanded="false" aria-label="Alterna navegação">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+
+                <div class="navbar-collapse collapse" id="navBarTopo">
+
+                    <ul class="navbar-nav ml-auto">
+
+                        <li class="nav-item active">
+                            <a class="nav-link" href="./index.html">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="./quem_somos.html">Quem Somos</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="./agendamento.html">Agendamento</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Serviços
+                            </a>
+
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="./servicos/banho_tosa.html">Banho & Tosa</a></li>
+                                <li><a class="dropdown-item" href="./servicos/vacinacao.html">Vacinação</a></li>
+                                <li><a class="dropdown-item" href="./servicos/hospedagem.html">Hospedagem</a></li>
+                            </ul>
+                        </li>                    
+                    </ul>
+                </div>               
+
+            </nav>
+
+            <span id="botao-login">
+                <img src="./midias/img/account.png" alt="" id="icone-login">
+                <a href="login.html">Login</a>
+            </span> 
+
+        </header>
+    </div>
+
+    <!--login-->
+    <div class="main-login">
+        <div class="card-login">
+                    <div class="text-login">Login</div>
+
+                    <div class="card-logo">
+                        <img src="./midias/img/vertical_branco.png" width="65%">
+                    </div>
+
+                <form class="form-login" action="" method="get">
+                    <div class="text-field">
+                        <label for="usuario">Usuário</label>
+                        <input type="text" name="usuário" id="usuario" placeholder="Usuário">
+                    </div>
+                    <div class="text-field">
+                        <label for="senha">Senha</label>
+                        <input type="password" name="senha" placeholder="Senha">
+                    </div>
+                
+                <label class="text-checkbox">
+                    <input type="checkbox" name="senha" value="lembrar-senha"> Lembrar senha
+                </label>
+                <!--    Fazer css -->
+                <br>
+                
+                <button class="login-button" type="submit">Login</button>    
+                        
+                <!-- <hr> 
+                <button class="login-button" action="cadastro.html"<a href="cadastro.html"></a>Cadastre-se</button> -->
+                </form>
+        </div>            
+        
+        <div class="card-cadastro">
+            <div class="text-cadastro">
+                Cadastro de Cliente   
+            </div>
+            <br>
+            <form>
+                <fieldset>
+                    <div class="text-field">
+                        <label>Nome</label>
+                        <input id="nome" name="nome" type="text" placeholder="Primeiro nome" required>
+                    </div>
+                    <div class="text-field">
+                        <label>Sobrenome</label>
+                        <input id="sobrenome" name="sobrenome" type="text" placeholder="Sobrenome" required>
+                    </div>
+                    <div class="text-field"> 
+                        <label>E-mail</label>
+                        <input id="email" name="email" type="email" placeholder="exemplo@exemplo.com" required>
+                    </div> 
+                    <div class="text-field">
+                        <label>Celular</label>
+                        <input id="phone" name="telefone" type="number" placeholder="Apenas números" required>
+                    </div class="text-field">
+                    <div class="text-field">
+                        <label>Senha</label>
+                        <input id="senha" name="senha" type="password" required>
+                    </div>                  
+                    <div class="text-field">
+                        <label>Repetir Senha</label>
+                        <input id="senha2" name="senha2" type="password" required>
+                    </div>
+
+                    <div class="text-field">
+                        <label>
+                            <input type="checkbox" name="lista" value="lista-email"> Inscreva-se para receber nossos e-mails.
+                        </label>
+                    </div>
+    
+                    <section>
+                        <button class="cadastro-button"type="submit">Enviar</button>
+                    </section>
+    
+                </fieldset>
+            </form>
+        </div>
+    </div>
+
+
+    <footer class="d-flex flex-column justify-content-center align-items-center">
+        <section id="text-footer">
+            Projeto Final Curso OiDevs By Ada - Front-End Estático - Professor Dannyel Kayke
+        </section>
+    </footer>
+
+    <!-- Importação de bibliotecas -->
+    <script src="https://releases.jquery.com/git/jquery-git.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+
+    <!-- Importação de scripts customizados -->
+    <script src="./midias/js/scripts.js"></script>
+</body>
+
+</html>

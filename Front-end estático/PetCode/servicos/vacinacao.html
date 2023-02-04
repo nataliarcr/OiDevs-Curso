@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Code</title>
+    
+    <!-- CSS do Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+    <!-- CSS customizado -->
+    <link rel="stylesheet" href="../midias/css/vacinacao.css">
+</head>
+
+<body>
+    <div class="container-fluid" id="div-header">
+        <header class="d-flex flex-wrap align-middle">
+            <a href="index.html"
+                class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+                <figure id="svg-logo" class="me-auto">
+                    <img src="../midias/img/vertical_branco.png" alt="" id="img-logo">
+                </figure>
+            </a>
+
+            <nav class="navbar navbar-expand-md navbar-expand-lg" id="menu-superior">
+
+                <div id="hamburguer">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navBarTopo" aria-controls="navBarTopo" aria-expanded="false" aria-label="Alterna navegação">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+
+                <div class="navbar-collapse collapse" id="navBarTopo">
+
+                    <ul class="navbar-nav ml-auto">
+
+                        <li class="nav-item active">
+                            <a class="nav-link" href="../index.html">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="../quem_somos.html">Quem Somos</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="../agendamento.html">Agendamento</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Serviços
+                            </a>
+
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="./banho_tosa.html">Banho & Tosa</a></li>
+                                <li><a class="dropdown-item" href="./vacinacao.html">Vacinação</a></li>
+                                <li><a class="dropdown-item" href="./hospedagem.html">Hospedagem</a></li>
+                            </ul>
+                        </li> 
+                    </ul>
+                </div>               
+            </nav>
+
+            <span id="botao-login">
+                <img src="../midias/img/account.png" alt="" id="icone-login">
+                <a href="../login.html">Login</a>
+            </span> 
+        </header>
+    </div>
+
+
+    <main class="container-fluid">
+        <h1 class="titulo_vacinacao">Vacinação</h1>
+        <div class="row">
+            <div class="img_vacinacao col-lg-12 col-xl-5 align-self-center mb-4">
+                <img class="col-10 card" src="../midias/img/vacinacao.png" alt="Vacinação em cão">
+            </div>
+
+            <div class="texto_vacinacao col-lg-12 col-xl-6">
+                <p>
+                    Cães e gatos devem ser vacinados nas primeiras seis a oito semanas de vida. As vacinas são repetidas a cada três a quatro semanas, até que o animal tenha 16 semanas ou um pouco mais.  É muito importante respeitar as recomendações da bula das vacinas na hora de adotar um protocolo vacinal, o qual pode ser individualizado pelo médico veterinário. Uma parte integrante da vacinação dos filhotes de cães e gatos é a vacina de "reforço", que é tradicionalmente aplicada aos 12 meses de idade ou 12 meses após a última vacina da série primária. O principal objetivo é assegurar a proteção imunológica do animal.
+                </p>
+
+                <p>
+                    “A vacinação em filhotes é de suma importância para que cresçam saudáveis e evitem certas doenças na fase adulta. A vacinação deve ter reforço anual e ser sempre orientada pelo médico veterinário. A prevenção é um dos principais caminhos para o bem-estar do animal”, salienta Alexandre Merlo.
+                </p>
+                    
+                <p>
+                    Para oferecer maior tranquilidade aos médicos veterinários, a Pet Code possui o programa Proteção Garantida. De acordo com o programa, caso um animal tenha sido vacinado contra determinada doença, utilizando os produtos da empresa, e posteriormente for diagnosticado com a mesma doença, a Pet Code dará o suporte necessário para ao médico veterinário responsável pelo animal, a realização dos exames laboratoriais e despesas relacionadas ao tratamento (internações e medicações) nos casos devidamente comprovados e de acordo com o regulamento do programa*.
+                </p>
+                <p>
+                    <b>Confira nossa lista de vacinas obrigatórias para seu pet:</b> 
+                </p>
+            </div>
+        </div>
+
+        <div class="titulo_tabela_vacinacao">
+            <h2>Vacinação em Cães</h2>
+        </div>
+        <div class="table-responsive">
+            <table class="tabela_vacinacao table table-striped">
+                <thead>
+                    <tr>
+                        <th>Vacina</th>
+                        <th>Proteção</th>
+                        <th>Administração</th>
+                        <th>Dose Inicial</th>
+                        <th>Reforço</th>
+                    </tr>
+                </thead>
+    
+                <tbody>
+                    <tr>
+                        <td>Antirrábica</td>
+                        <td>Raiva Canina</td>
+                        <td>A partir de 12 semanas de vida</td>
+                        <td>Dose única</td>
+                        <td>Reforço anual</td>
+    
+                        <tr>
+                            <td>Múltipla ou Polivalente</td>
+                            <td>Várias patologias virais e bacterianas</td>
+                            <td>A partir de 6 ou 8 semanas de vida</td>
+                            <td>Dose única</td>
+                            <td>Reforço anual</td>
+                        </tr>
+    
+                        <tr>
+                            <td>GiardiaVax</td>
+                            <td>Giardíase</td>
+                            <td>A partir de 8 semanas de vida</td>
+                            <td>Duas doses</td>
+                            <td>Reforço anual</td>
+                        </tr>
+    
+                        <tr>
+                            <td>Pneumodog</td>
+                            <td>Gripe canina</td>
+                            <td>A partir da 4 ou 6 semana de vida</td>
+                            <td>Duas doses</td>
+                            <td>Reforço anual</td>
+                        </tr>
+    
+                        <tr>
+                            <td>Pneumodog</td>
+                            <td>Gripe canina</td>
+                            <td>A partir da 4 ou 6 semana de vida</td>
+                            <td>Duas doses</td>
+                            <td>Reforço anual</td>
+                        </tr>
+    
+                        <tr>
+                            <td>LeishTech</td>
+                            <td>leishmaniose</td>
+                            <td>A partir da 4 semana de vida</td>
+                            <td>Três doses</td>
+                            <td>Reforço anual</td>
+                        </tr>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="titulo_tabela_vacinacao">
+            <h2>Vacinação em Gatos</h2>
+        </div>
+        <div class="table-responsive mb-5">
+            <table class="tabela_vacinacao table table-striped">
+                <thead>
+                    <tr>
+                        <th>Vacina</th>
+                        <th>Proteção</th>
+                        <th>Administração</th>
+                        <th>Dose Inicial</th>
+                        <th>Reforço</th>
+                    </tr>
+                </thead>
+    
+                <tbody>
+                    <tr>
+                        <td>Polivalente</td>
+                        <td>Panleucopenia, Calicivirose, Rinotraqueíte, Clamidiose e Leucemia</td>
+                        <td>De 45 a 60 dias de vida</td>
+                        <td>Três doses</td>
+                        <td>Reforço anual</td>
+                    </tr>
+
+                    <tr>
+                        <td>Antirrábica</td>
+                        <td>Raiva </td>
+                        <td>A partir de 12 semanas de vida</td>
+                        <td>Dose única</td>
+                        <td>Reforço anual</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </main>
+
+    <footer class="d-flex flex-column justify-content-center align-items-center">
+        <section id="text-footer">
+            Projeto Final Curso OiDevs By Ada - Front-End Estático - Professor Dannyel Kayke
+        </section>
+    </footer>
+
+    <!-- Importação de bibliotecas -->
+    <script src="https://releases.jquery.com/git/jquery-git.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+
+    <!-- Importação de scripts customizados -->
+    <script src="./midias/js/scripts.js"></script>
+</body>
