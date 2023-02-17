@@ -1,5 +1,7 @@
+import { Text } from "../ui/text";
+
 export const Avatar = () => {
     return <div className="Avatar">
-    _Avatar_
+    <Text>_Avatar_</Text>
     </div>
 }

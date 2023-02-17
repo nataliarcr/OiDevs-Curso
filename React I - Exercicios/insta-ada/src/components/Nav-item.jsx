@@ -1,5 +1,7 @@
+import { Text } from '../ui/text/Text';
+
 export const NavItem = (props) => {
-    return <div className ="navItem">
-        {props.children}
-    </div>
+    return <Text className ="navItem">
+        {props.text}
+    </Text>
 }
